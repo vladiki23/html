@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Кодировка документа -->
     <meta charset="utf-8">
+    <!-- Заголовок страницы -->
     <title>Моя первая веб-страница</title>
+    <!-- Путь к css стилю -->
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <style>
+        .city {
+         background-color: tomato;
+         width: 50%;
+         color: white;
+         padding: 6px;
+        } 
+     
+        .main {
+         text-align: center;
+        }
+       </style>
 </head>
 <body>
+    <!-- Основное содержимое страницы -->
     <header>
-        <a href="#">Главная</a>
+    <!-- Навигационное меню -->
+    <nav class="topnav">
+        <a class="active" href="#" style="color: rgb(80, 11, 11);">Главная</a>
         <a href="about.html">О нас</a>
         <a href="contacts.html">Контакты</a>
+    </nav>
     </header>
     <main>
-        <h1>Моя первая веб-страница</h1>
-        <h2>Про меня</h2>
+        <h1 class="city" style="text-align: center;">Моя первая веб-страница</h1>
+        <img src="../images/adaptiv.jpg" alt="img" style="margin-left: 170px;">
+        <h2 class="city" style="text-align: center;">Про меня</h2>
         <p>Меня зовут Вася. Я работаю <strong>маркетологом</strong>. Решил получше узнать смежную профессию, чтобы разобраться как устроен веб.</p>
         <p>Живу в Питере. Люблю кататься на велосипеде.</p>
-        <h2>Чему я хочу научиться</h2>
+        <h2 class="city" style="text-align: center;">Чему я хочу научиться</h2>
         <p>На <em>этом</em> курсе я хотел бы научиться создавать сайты с нуля.</p>
     </main>
+    <!-- Подвал сайта -->
     <footer>
         <span>&copy;&nbsp;Skillfactory</span>
     </footer>
